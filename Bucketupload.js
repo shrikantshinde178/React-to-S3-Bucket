@@ -32,13 +32,13 @@ const S3Uploader = () => {
         setUploading(true);
 
         const s3 = new AWS.S3({
-          accessKeyId: 'aAKIAVVBMZHMOM4XSI3O2',
-          secretAccessKey: 'gCBtlsT4wC+d2E/5+zIeckdaeItCuouP8vi35X5W',
-          region: 'ap-south-1',
+          accessKeyId: 'ACCESS_KEY',
+          secretAccessKey: 'SECREATE_ACCESS_KEY',
+          region: 'REGION_NAME',
         });
 
         const params = {
-          Bucket: 'tasktilltoday',
+          Bucket: 'BUCKET_NAME',
           Key: selectedFile.name,
           Body: selectedFile,
         };
